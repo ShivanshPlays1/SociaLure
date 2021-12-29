@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Socialure</title>
+    <script>
+        function test(){
+          document.getElementById('yourmess').innerHTML = "<b><i>" + document.getElementById('yourname').value + ":</i></b> " + document.getElementById('message').value;
+        }
+    </script>
+  </head>
+  <body id="body" class="body">
+    <img src="output-onlinepngtools.png" alt="SociaLure" class="Socialure-IMG">
+        <div class="">
+          <ul id="textmsg" class="textmsg">
+            <span >
+              <li>
+                <B><i>Host:</i></B> Welcome to the Internet!
+              </li>
+            </span>
+            <span>
+              <li class="yourmessage" id="yourmess"></li>
+            </span>
+          </ul>
+        </div>
+        <div>
+          <span class="yourname">
+            <label for="yourname">Name:</label>
+            <input type="text" name="yourname" id="yourname">
+          </span>
+          <span>
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" class="Message-box" placeholder="Message" required/>
+          </span>
+          <span>
+              <button type="button" class="send-button" id="button" onclick="test()">Send</button>
+          </span>
+        </div>
+      </div>
+     
+      <style>
+        .Message-box {
+          border-radius: 20px;
+          margin-top: 100px;
+        }
+        .send-button {
+          border-radius: 30px;
+          background-color: blue;
+          color: white;
+          margin-top: 100px;
+        }
+  
+        #textmsg{
+          border: blue;
+          border-style: unset;
+          list-style-type: none;
+          margin-left: 2px;
+          padding: none;
+        }
+  
+        .welcome{
+          margin: none;
+          padding: none;
+        }
+  
+        #yourname{
+          width: 30px;
+        }
+  
+      </style>
+  </body>
+</html>
